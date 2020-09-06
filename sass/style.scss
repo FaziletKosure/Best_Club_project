@@ -1,7 +1,9 @@
 div.main-container {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 
   section {
     background-image: url("./images/alesia-kazantceva-XLm6-fPwK5Q-unsplash 1.png");
