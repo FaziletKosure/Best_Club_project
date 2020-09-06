@@ -1,29 +1,25 @@
 div.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./images/alesia-kazantceva-XLm6-fPwK5Q-unsplash 1.png");
+  background-size: cover;
 }
 div.main-container section {
-  background-image: url("./images/alesia-kazantceva-XLm6-fPwK5Q-unsplash 1.png");
-  background-repeat: no-repeat;
-  margin-right: 4px;
-  width: 791px;
-  height: 421px;
-  display: flex;
-  flex-direction: column;
-}
-div.main-container section .transbox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   background: rgba(150, 145, 145, 0.79);
-  height: 421px;
+  background-size: cover;
 }
 div.main-container section .section__nav--left {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 791px;
-  height: 60px;
   border-bottom: 2px solid white;
 }
 div.main-container section .section__nav--left .section__nav--img {
@@ -52,20 +48,18 @@ div.main-container section .section__nav--left .section__nav--ul li:last-child {
   color: #ff0000;
 }
 div.main-container section .article-left {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 div.main-container section .article-left .article-left__h1 {
-  width: 624px;
-  height: 59px;
   font-family: Modak;
   font-style: normal;
   font-weight: normal;
   font-size: 54px;
   line-height: 81px;
   color: #ffffff;
-  margin-left: 143px;
 }
 div.main-container section .article-left .article-left__ul {
   width: 288px;
@@ -93,92 +87,57 @@ div.main-container section .article-left .article-left__ul li span {
   position: relative;
   left: -15px;
 }
-div.main-container aside {
-  background-image: url("./images/alesia-kazantceva-XLm6-fPwK5Q-unsplash 2.png");
-  background-repeat: no-repeat;
-  width: 305px;
-  height: 421px;
-}
-div.main-container aside .transbox {
-  background: rgba(150, 145, 145, 0.79);
-  height: 421px;
-}
-div.main-container aside .aside__nav--right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 305px;
-  height: 51px;
-  border-bottom: 2px solid white;
-}
-div.main-container aside .aside__nav--right .aside__nav--img {
-  margin-left: 14px;
-  width: 80px;
-  height: 25px;
-}
-div.main-container aside .aside__nav--right .aside__nav--ul {
-  display: flex;
-  list-style-type: none;
-}
-div.main-container aside .aside__nav--right .aside__nav--ul li {
-  padding: 22px;
-  width: 32px;
-  height: 14px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  /* identical to box height */
-  color: #ffffff;
-}
-div.main-container aside .aside__nav--right .aside__nav--ul li:last-child {
-  width: 44px;
-  height: 14px;
-  color: #ff0000;
-}
-div.main-container aside .article-right {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-div.main-container aside .article-right .article-right__h1 {
-  width: 243px;
-  height: 46px;
-  font-family: Modak;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 54px;
-  text-align: center;
-  color: #ffffff;
-  margin-left: 4px;
-}
-div.main-container aside .article-right .article-right__ul {
-  width: 288px;
-  height: 140px;
-  list-style-type: circle;
-  list-style-position: inside;
-  padding: 30px 25px 30px 21px;
-  margin-top: 25px;
-  margin-left: 4px;
-  background: #ffffff;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-}
-div.main-container aside .article-right .article-right__ul li {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  /* or 67% */
-  color: #460808;
-}
-div.main-container aside .article-right .article-right__ul li span {
-  position: relative;
-  left: -15px;
+
+@media (max-width: 600px) {
+  div.main-container {
+    background-image: url("./images/alesia-kazantceva-XLm6-fPwK5Q-unsplash 2.png");
+    background-size: contain;
+  }
+  div.main-container section .section__nav--left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+  }
+  div.main-container section .section__nav--left .section__nav--img {
+    width: 80px;
+    height: 25px;
+    margin-left: 14px;
+  }
+  div.main-container section .section__nav--left .section__nav--ul li {
+    padding: 22px;
+    width: 32px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  div.main-container section .section__nav--left .section__nav--ul li:last-child {
+    width: 44px;
+    height: 14px;
+  }
+  div.main-container .article-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.main-container .article-left .article-left__h1 {
+    width: 243px;
+    font-size: 36px !important;
+    line-height: 54px !important;
+    text-align: center;
+    margin-left: 4px;
+  }
+  div.main-container .article-left .article-left__ul {
+    margin-top: 5px !important;
+    margin-left: 31px !important;
+  }
+  div.main-container .article-left .article-left__ul li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #460808;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
