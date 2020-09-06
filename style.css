@@ -14,6 +14,10 @@ div.main-container section {
   display: flex;
   flex-direction: column;
 }
+div.main-container section .transbox {
+  background: rgba(150, 145, 145, 0.79);
+  height: 421px;
+}
 div.main-container section .section__nav--left {
   display: flex;
   justify-content: space-between;
@@ -92,6 +96,10 @@ div.main-container aside {
   background-image: url("./images/alesia-kazantceva-XLm6-fPwK5Q-unsplash 2.png");
   background-repeat: no-repeat;
   width: 305px;
+  height: 421px;
+}
+div.main-container aside .transbox {
+  background: rgba(150, 145, 145, 0.79);
   height: 421px;
 }
 div.main-container aside .aside__nav--right {

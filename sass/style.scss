@@ -13,6 +13,10 @@ div.main-container {
     height: 421px;
     display: flex;
     flex-direction: column;
+    .transbox {
+      background: rgba(150, 145, 145, 0.79);
+      height: 421px;
+    }
 
     .section__nav--left {
       display: flex;
@@ -99,6 +103,10 @@ div.main-container {
     background-repeat: no-repeat;
     width: 305px;
     height: 421px;
+    .transbox {
+      background: rgba(150, 145, 145, 0.79);
+      height: 421px;
+    }
 
     // background: rgba(150, 145, 145, 0);
     .aside__nav--right {
