@@ -29,6 +29,7 @@ div.main-container section .section__nav--left {
 div.main-container section .section__nav--left .section__nav--img {
   width: 150px;
   height: 30px;
+  margin-left: 15px;
 }
 div.main-container section .section__nav--left .section__nav--ul {
   display: flex;
@@ -111,6 +112,7 @@ div.main-container aside .aside__nav--right {
   border-bottom: 2px solid white;
 }
 div.main-container aside .aside__nav--right .aside__nav--img {
+  margin-left: 14px;
   width: 80px;
   height: 25px;
 }
